@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>UT consent | ReCoWa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<div class="w3-content" style="max-width:1000px;margin-top:46px">
+
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+
+        <div class="w3-padding-small">
+            <h1 class="w3-wide">ReCoWa</h1>
+            <p class="w3-opacity"><i>An online tool for conducting Remote Cognitive Walkthroughs</i></p>
+        </div>
+
+        <hr>
+
+        <div class="w3-padding-32">
+            <div class="w3-padding-16">
+                <h2>User consent</h2>
+                <p class="w3-justify">
+                    Thank you for participating in this study. This work is affiliated with the UBC course “CPSC 544”
+                    (101).
+                    Please note that we are seeking undergraduate university students.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="w3-padding-16">
+                <h3>Purpose</h3>
+                <p class="w3-justify">
+                    The overall purpose of this research is evaluate the efficacy of a method of reducing smart device
+                    screen time for undergraduate students.
+                </p>
+
+                <h3>What you will be asked to do</h3>
+                <ol class="w3-justify">
+                    <li>Answer interview questions</li>
+                    <li>Use video screen share</li>
+                    <li>Turn on camera</li>
+                    <li>Interact with digital systems</li>
+                </ol>
+                <p class="w3-justify">
+                    This should take about 30-45 minutes and be completed in one session. The sessions will also be
+                    video and/or audio recorded. Please let us know if you are uncomfortable with the recording. I/we
+                    will respond to any questions or concerns that you may have.
+                </p>
+
+                <h3>Compensation</h3>
+                <p class="w3-justify">There is no compensation for participating in this study.</p>
+
+                <h3>Confidentiality</h3>
+                <p class="w3-justify">
+                    The results of your participation will be reported without any reference to you specifically. All
+                    information that you provide will be stored in Canada. It will be treated confidentially and your
+                    identity will not be revealed in reporting the study results. The two exceptions are: (1) excerpts
+                    from the video/audio recording in which a participant can be identified may be presented in a class
+                    project presentation (but any other presentation venue, such as a scholarly conference, will require
+                    that participants be non-identifiable in the video/images), and (2) we request but cannot enforce
+                    focus group members to keep discussions from any focus group confidential.
+                </p>
+
+                <h3>Data retention</h3>
+                <p class="w3-justify">
+                    Identifiable data and video/audio recordings will be stored securely in a locked metal cabinet or in
+                    a password protected computer account. All data from individual participants will be coded so that
+                    their anonymity will be protected in any reports, research papers, thesis documents, and
+                    presentations that result from this work.
+                </p>
+            </div>
+        </div>
+
+        <input class="w3-check" type="checkbox" onclick="toggleUserTesting()">
+        <label><b>I agree to the above information and give my consent</b></label>
+
+        <hr>
+
+        <div class="w3-row w3-margin w3-padding-32">
+            <div class="w3-third">
+                <a href="task-list.html">
+                    <button id="ut-btn" class="w3-btn w3-round-large w3-card w3-hover-red" disabled>
+                        Start user testing! <i class="fa fa-user"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="w3-third">
+                <a href="../designer-info.html">
+                    <button class="w3-btn w3-round-large w3-card w3-hover-shadow w3-hover-red">
+                        Information for designers <i class="fa fa-info-circle"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="w3-third">
+                <a href="../index.html">
+                    <button class="w3-btn w3-round-large w3-card w3-hover-red">
+                        Back home <i class="fa fa-home"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer --><!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <h4 class="w3-wide">ReCoWa</h4>
+    <p class="w3-small w3-opacity"><i>An online tool for conducting Remote Cognitive Walkthroughs</i></p>
+    <div class="w3-padding-16">
+        <p class="w3-medium">This is an open-source project available on <a
+                href="https://github.com/matteo-rizzo/remote-cognitive-walkthrough" target="_blank">Github</a></p>
+        <p class="w3-medium">Powered by the <b>Digital Detox</b> team for CPSC544: "HCI" @ UBC</p>
+    </div>
+</footer>
+
+</body>
+
+
+<script language="javascript">
+    function toggleUserTesting() {
+        document.getElementById("ut-btn").disabled = !document.getElementById("ut-btn").disabled;
+    }
+</script>
+
+</html>

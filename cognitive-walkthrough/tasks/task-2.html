@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>CW - Task 4 | ReCoWa</title>
+<title> CW - Task 2 | ReCoWa</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,39 +19,49 @@
             <h2>Panels navigator</h2>
             <div class="w3-padding-16"><p><em>Currently displaying panel <b id="current-panel">M01</b></em></p></div>
             <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('M01')">M01</button>
-            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('P01')">P01</button>
-            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('P02')">P02</button>
-            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('P03')">P03</button>
-            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('P04')">P04</button>
-            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('P05')">P05</button>
+            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('E01')">E01</button>
+            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('E02')">E02</button>
+            <button class="w3-btn w3-ripple w3-card w3-round-xlarge" onclick="changeImage('E03')">E03</button>
         </div>
 
-        <div class="w3-padding-32">
-            <h2>Task 4</h2>
-            <p><em>Visualizing digital detox progress</em></p>
-            <p><b>Objective:</b> checking how much progress has been made on today’s goal and observe completing the
-                goal.</p>
+        <hr>
+
+        <div class="w3-padding-16">
+            <h2>Task 2</h2>
+            <p><em>Selecting harmful and productive apps</em></p>
+            <p class="w3-justify"><b>User goal:</b> Editing “Work Apps” List to hard block “Youtube, Facebook, Candy
+                Crush, Instagram, and Twitter” and allow “Gmail and Slack”</p>
         </div>
+
+        <hr>
 
         <div class="w3-row w3-margin w3-padding-32">
             <div class="w3-quarter">
                 <a href="../task-list.html">
-                    <button class="w3-button w3-card w3-hover-shadow w3-hover-red">Task list</button>
+                    <button class="w3-btn w3-round-large w3-card w3-hover-red">
+                        Task list <i class="fa fa-list-ol"></i>
+                    </button>
                 </a>
             </div>
             <div class="w3-quarter">
-                <a href="../ground-rules.html">
-                    <button class="w3-button w3-card w3-hover-shadow w3-hover-red">Review ground rules</button>
+                <a href="../../ground-rules.html">
+                    <button class="w3-btn w3-round-large w3-card w3-hover-red">
+                        Ground rules <i class="fa fa-check-circle"></i>
+                    </button>
                 </a>
             </div>
             <div class="w3-quarter">
-                <a href="../designer-info.html">
-                    <button class="w3-button w3-card w3-hover-shadow w3-hover-red">Information for designers</button>
+                <a href="../../designer-info.html">
+                    <button class="w3-btn w3-round-large w3-card w3-hover-shadow w3-hover-red">
+                        Info for designers <i class="fa fa-info-circle"></i>
+                    </button>
                 </a>
             </div>
             <div class="w3-quarter">
-                <a href="../index.html">
-                    <button class="w3-button w3-card w3-hover-shadow w3-hover-red">Back to home</button>
+                <a href="../../index.html">
+                    <button class="w3-btn w3-round-large w3-card w3-hover-shadow w3-hover-red">
+                        Back home <i class="fa fa-home"></i>
+                    </button>
                 </a>
             </div>
         </div>
@@ -74,7 +84,7 @@
 
 <script language="javascript">
     function changeImage(panel_id) {
-        document.getElementById("img-panel").src = "../img/task-4/" + panel_id + ".png";
+        document.getElementById("img-panel").src = "../img/task-2/" + panel_id + ".png";
         document.getElementById("current-panel").textContent = panel_id;
     }
 </script>
